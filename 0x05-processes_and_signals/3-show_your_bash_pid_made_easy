@@ -1,5 +1,5 @@
-i#!/usr/bin/env bash
-# This script is displaying the PID of your Bash process
-# shellcheck disable=SC2009
+#!/usr/bin/env bash
+# Displays the PID along with the process name, of 
+#+ processes whose name contains the word "bash".
 
-ps auxf | grep bash
+pgrep bash -l
